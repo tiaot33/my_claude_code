@@ -5,32 +5,10 @@
     "email": "lyq12123@gmail.com"
   },
   "metadata": {
-    "description": "Personal Claude Code plugin repository for custom prompts, commands, agents, and skills",
+    "description": "my-claude-code",
     "version": "1.0.0"
   },
   "plugins": [
-    {
-      "name": "reading-notes-skills",
-      "description": "AI-assisted reading and note-taking skills for professional books and EPUB documents",
-      "source": "./note",
-      "strict": false,
-      "version": "1.0.0",
-      "author": {
-        "name": "tiaot33",
-        "email": "lyq12123@gmail.com"
-      },
-      "keywords": [
-        "reading",
-        "note-taking",
-        "epub",
-        "knowledge-management",
-        "learning"
-      ],
-      "category": "productivity",
-      "skills": [
-        "./skills/epub-book-notes"
-      ]
-    },
     {
       "name": "document-skills",
       "description": "Collection of document processing suite including Excel, Word, PowerPoint, and PDF capabilities",
