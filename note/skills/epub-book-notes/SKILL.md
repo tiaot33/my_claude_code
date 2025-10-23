@@ -129,38 +129,7 @@ For each chapter in the extracted content, create a comprehensive chapter note f
 
 **Important: Read the template before generating notes!**
 
-Read `references/note_template.md` to understand the required structure. Each chapter note MUST include:
-
-1. **📝 Chapter Summary** (章节摘要)
-   - Core theme, main arguments, learning objectives
-   - 3-5 paragraphs covering the chapter's main topics
-
-2. **💡 Key Concepts** (关键概念)
-   - List all important concepts introduced in the chapter
-   - For each concept: definition, detailed explanation, importance
-
-3. **📚 Examples & Cases** (示例与案例)
-   - Extract all examples, code samples, case studies from the chapter
-   - Include scenario, content, and key takeaways
-
-4. **🎯 Important Conclusions** (重要结论)
-   - Major findings, principles, and takeaways
-   - Include explanation, application scenarios, and impact
-
-5. **🎨 Visualizations** (图解与可视化)
-   - Recreate important diagrams using Mermaid, ASCII art, or descriptions
-   - Explain complex relationships visually
-
-6. **🔗 Related Knowledge** (关联知识点)
-   - Prerequisites, follow-up topics, cross-disciplinary connections
-   - Link to other chapters and concepts
-
-7. **⚠️ Common Misconceptions** (常见误区)
-   - Identify potential misunderstandings
-   - Clarify correct understanding and explain why confusion occurs
-
-8. **📌 Chapter Summary** (章节总结)
-   - Core points, quick reference list
+Read `references/note_template.md` to understand the required structure.
 
 **Completeness is critical:**
 - Do NOT skip or summarize content too briefly
