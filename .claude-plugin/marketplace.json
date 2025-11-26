@@ -5,14 +5,124 @@
     "email": "lyq12123@gmail.com"
   },
   "metadata": {
-    "description": "Personal Claude Code plugin repository for custom prompts, commands, agents, and skills",
+    "description": "个人 Claude Code 插件仓库，用于管理自定义提示词、命令、代理和技能",
     "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "reading-notes-skills",
-      "description": "AI-assisted reading and note-taking skills for professional books and EPUB documents",
-      "source": "./note",
+      "name": "requirements-clarity",
+      "source": "./requirements-clarity/",
+      "description": "通过系统化的澄清与100分评分体系，将模糊需求转化为可执行的产品需求文档。",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code Dev Workflows",
+        "url": "https://github.com/cexll/myclaude"
+      },
+      "homepage": "https://github.com/cexll/myclaude",
+      "repository": "https://github.com/cexll/myclaude",
+      "license": "MIT",
+      "keywords": [
+        "requirements",
+        "clarification",
+        "prd",
+        "specifications",
+        "quality-gates",
+        "requirements-engineering"
+      ],
+      "category": "essentials",
+      "strict": false,
+      "skills": [
+        "./skills/SKILL.md"
+      ]
+    },
+    {
+      "name": "requirements-driven-development",
+      "source": "./requirements-driven-workflow/",
+      "description": "需求驱动开发优化流程，通过90%质量门禁覆盖确保实用功能落地",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code Dev Workflows",
+        "url": "https://github.com/cexll/myclaude"
+      },
+      "homepage": "https://github.com/cexll/myclaude",
+      "repository": "https://github.com/cexll/myclaude",
+      "license": "MIT",
+      "keywords": [
+        "requirements",
+        "workflow",
+        "automation",
+        "quality-gates",
+        "feature-development",
+        "agile",
+        "specifications"
+      ],
+      "category": "workflows",
+      "strict": false,
+      "commands": [
+        "./commands/requirements-pilot.md"
+      ],
+      "agents": [
+        "./agents/requirements-generate.md",
+        "./agents/requirements-code.md",
+        "./agents/requirements-testing.md",
+        "./agents/requirements-review.md"
+      ]
+    },
+    {
+      "name": "codex-cli",
+      "source": "./cli/codex/",
+      "description": "执行 Codex CLI 进行代码分析、重构和自动化代码修改，支持文件引用（@语法）和结构化输出",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code Dev Workflows",
+        "url": "https://github.com/cexll/myclaude"
+      },
+      "homepage": "https://github.com/cexll/myclaude",
+      "repository": "https://github.com/cexll/myclaude",
+      "license": "MIT",
+      "keywords": [
+        "codex",
+        "code-analysis",
+        "refactoring",
+        "automation",
+        "gpt-5",
+        "ai-coding"
+      ],
+      "category": "essentials",
+      "strict": false,
+      "skills": [
+        "./SKILL.md"
+      ]
+    },
+    {
+      "name": "gemini-cli",
+      "source": "./cli/gemini/",
+      "description": "执行 Gemini CLI 进行 AI 驱动的代码分析和生成，使用 Google 最新的 Gemini 模型",
+      "version": "1.0.0",
+      "author": {
+        "name": "Claude Code Dev Workflows",
+        "url": "https://github.com/cexll/myclaude"
+      },
+      "homepage": "https://github.com/cexll/myclaude",
+      "repository": "https://github.com/cexll/myclaude",
+      "license": "MIT",
+      "keywords": [
+        "gemini",
+        "google-ai",
+        "code-analysis",
+        "code-generation",
+        "ai-reasoning"
+      ],
+      "category": "essentials",
+      "strict": false,
+      "skills": [
+        "./SKILL.md"
+      ]
+    },
+    {
+      "name": "git-tools",
+      "description": "Git 工作流自动化工具，包括提交、回滚、分支清理和工作树管理",
+      "source": "./git",
       "strict": false,
       "version": "1.0.0",
       "author": {
@@ -20,14 +130,91 @@
         "email": "lyq12123@gmail.com"
       },
       "keywords": [
-        "reading",
-        "note-taking",
-        "epub",
-        "knowledge-management",
-        "learning"
+        "git",
+        "version-control",
+        "commit",
+        "rollback",
+        "worktree",
+        "branch"
+      ],
+      "category": "development",
+      "commands": [
+        "./commands/git-cleanBranches.md",
+        "./commands/git-commit.md",
+        "./commands/git-rollback.md",
+        "./commands/git-worktree.md"
+      ]
+    },
+    {
+      "name": "init-tools",
+      "description": "项目初始化和架构设置工具，包含日期时间实用功能",
+      "source": "./init",
+      "strict": false,
+      "version": "1.0.0",
+      "author": {
+        "name": "tiaot33",
+        "email": "lyq12123@gmail.com"
+      },
+      "keywords": [
+        "initialization",
+        "project-setup",
+        "architecture",
+        "datetime"
+      ],
+      "category": "development",
+      "commands": [
+        "./commands/init-project.md"
+      ],
+      "agents": [
+        "./agents/get-current-datetime.md",
+        "./agents/init-architect.md"
+      ]
+    },
+    {
+      "name": "plan-tools",
+      "description": "任务规划、UI/UX 设计和功能开发工作流工具",
+      "source": "./plan",
+      "strict": false,
+      "version": "1.0.0",
+      "author": {
+        "name": "tiaot33",
+        "email": "lyq12123@gmail.com"
+      },
+      "keywords": [
+        "planning",
+        "task-breakdown",
+        "ui-ux",
+        "feature-development"
       ],
       "category": "productivity",
-      "skills": ["./skills/epub-book-notes"]
+      "commands": [
+        "./commands/feat.md"
+      ],
+      "agents": [
+        "./agents/planner.md",
+        "./agents/ui-ux-designer.md"
+      ]
+    },
+    {
+      "name": "sixstep-workflow",
+      "description": "专业的六阶段开发工作流，用于结构化编码会话",
+      "source": "./sixStep",
+      "strict": false,
+      "version": "1.0.0",
+      "author": {
+        "name": "tiaot33",
+        "email": "lyq12123@gmail.com"
+      },
+      "keywords": [
+        "workflow",
+        "development-process",
+        "structured-coding",
+        "methodology"
+      ],
+      "category": "productivity",
+      "commands": [
+        "./commands/workflow.md"
+      ]
     }
   ]
 }
