@@ -69,9 +69,9 @@
       ]
     },
     {
-      "name": "codex-cli",
-      "source": "./cli/codex/",
-      "description": "执行 Codex CLI 进行代码分析、重构和自动化代码修改，支持文件引用（@语法）和结构化输出",
+      "name": "cli-skills",
+      "source": "./cli",
+      "description": "执行 Codex CLI 或者 Gemini CLI 进行代码分析、重构和自动化代码修改，支持文件引用（@语法）和结构化输出",
       "version": "1.0.0",
       "author": {
         "name": "Claude Code Dev Workflows",
@@ -86,27 +86,6 @@
         "refactoring",
         "automation",
         "gpt-5",
-        "ai-coding"
-      ],
-      "category": "essentials",
-      "strict": false,
-      "skills": [
-        "./SKILL.md"
-      ]
-    },
-    {
-      "name": "gemini-cli",
-      "source": "./cli/gemini/",
-      "description": "执行 Gemini CLI 进行 AI 驱动的代码分析和生成，使用 Google 最新的 Gemini 模型",
-      "version": "1.0.0",
-      "author": {
-        "name": "Claude Code Dev Workflows",
-        "url": "https://github.com/cexll/myclaude"
-      },
-      "homepage": "https://github.com/cexll/myclaude",
-      "repository": "https://github.com/cexll/myclaude",
-      "license": "MIT",
-      "keywords": [
         "gemini",
         "google-ai",
         "code-analysis",
@@ -116,7 +95,8 @@
       "category": "essentials",
       "strict": false,
       "skills": [
-        "./SKILL.md"
+        "./gemini",
+        "./codex"
       ]
     },
     {
